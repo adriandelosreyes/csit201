@@ -22,12 +22,14 @@
 		}
 
 		tr:first-of-type{
-			background-color: #EE82EE;
+			background-color: #7CB9E8;
 		}
 
 		tr:last-child{
-			background-color: #DDA0DD;
+			background-color:  #DDA0DD;
 		}
+
+
 
 
 	</style>
@@ -37,18 +39,24 @@
 	<table border="3">
 		<caption>Me</caption>
 		<tr>
-			<td colspan="3">Contacts List</td>
+			<td colspan="5">Contacts List</td>
 		</tr>
+
+<thead>
 		<tr>
 			<th id="name">Name</th>
 			<th id="bday">Birthday</th>
 			<th id="num">Number</th>
+			<th id="hour">Hours</th>
 		</tr>
+</thead>
 
+<tbody>
 		<tr>
 			<td rowspan="2" headers="name">Adrian Delos Reyes</td>
 			<td rowspan="2" headers="bday">01/03/02</td>
-			<td headers="num">09260000000</td>	
+			<td headers="num">09260000000</td>
+			<td header="hour" rowspan="2">4</td>
 		</tr>
 
 		<tr>
@@ -56,10 +64,22 @@
 		</tr>
 
 		<tr>
+
 			<td headers="name">Dreezy Dreezy</td>
 			<td headers="bday">01/03/02</td>
 			<td headers="num">09260000000</td>
+			<td header="hour" rowspan="2">8</td>			
 		</tr>
+</tbody>
+
+<tfoot>
+	<td colspan="3">Total</td>
+	<td>12</td>
+</tfoot>
+
+
+
+
 	</table>
 </body>
 </html>		
