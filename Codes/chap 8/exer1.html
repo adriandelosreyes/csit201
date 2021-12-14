@@ -7,9 +7,9 @@
 
 	<style type="text/css">
 		table{
-			background-color: #1da1f2;
+			background-color: #452c63;
 		}
-		th {
+		th, td {
 			background-color: #7CB9E8;
 		}
 	</style>
@@ -22,19 +22,25 @@
 			<td colspan="3">Contacts List</td>
 		</tr>
 		<tr>
-			<th>Name</th>
-			<th>Birthday</th>
-			<th>Number</th>
+			<th id="name">Name</th>
+			<th id="bday">Birthday</th>
+			<th id="num">Number</th>
 		</tr>
 
 		<tr>
-			<td bgcolor="#F0F8FF" rowspan="2">Adrian Delos Reyes</td>
-			<td rowspan="2">01/03/02</td>
-			<td>09260000000</td>	
+			<td bgcolor="#F0F8FF" rowspan="2" headers="name">Adrian Delos Reyes</td>
+			<td rowspan="2" headers="bday">01/03/02</td>
+			<td headers="num">09260000000</td>	
 		</tr>
 
 		<tr>
-			<td>09260000000</td>	
+			<td headers="num">09260000000</td>	
+		</tr>
+
+		<tr>
+			<td headers="name">Dreezy Dreezy</td>
+			<td headers="bday">01/03/02</td>
+			<td headers="num">09260000000</td>
 		</tr>
 	</table>
 </body>
